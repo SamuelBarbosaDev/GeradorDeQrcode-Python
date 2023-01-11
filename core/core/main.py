@@ -12,10 +12,10 @@ class Github():
         if folder_name not in os.listdir():
             os.mkdir(f'./{folder_name}')
 
-    def creator_repository(self, repositories):
+    def creator_repository(self, user, repositories):
         for repository in repositories:
             qr = qrcode.make(
-                f'https://github.com/SamuelBarbosaDev/{repository}'
+                f'https://github.com/{user}/{repository}'
             )
             qr.save(f"{self.folder_name}/{repository}.png")
 
@@ -31,5 +31,6 @@ if __name__ == "__main__":
         ]
     github = Github()
     github.creator_repository(
+        user="SamuelBarbosaDev",
         repositories=github_repositories,
     )
