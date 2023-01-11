@@ -1,24 +1,36 @@
-<h1>Gerador De Qrcode Com python</h1>
-<h3>Objetivo:</h3>
-    <p>
-     Criar um gerador de Qrcode para os meus repositórios do github.
-    </p>
+# Qrcode Generator Python
+## Ambiente virtual e Dependências:
+Criando ambiente virtual:
+```
+python3 -m venv core/venv
+```
 
-<h3>Como Funciona:</h3>
-    <p>
-       Primeiro listo o nome de cada um dos meus repositórios, após isso dentro de um loop do mesmo tamanho da minha lista, junto o nome dos repositórios com a minha URL do github, e por fim crio o QRCode para o meu repositório.
-    </p>
+Entrando no ambiente virtual:
+```
+source core/venv/bin/activate
+```
 
-<h3> O que aprendi:</h3>
-    <p>
-        Aprendi como é simples utilizar a lib qrcode.
-    </p>
+Instale as dependências:
+```
+pip install -r core/requirements.txt
+```
+## Objetivo:
+Criar um gerador de Qrcode para os meus repositórios do github.
 
-<h3>Tecnologias utilizadas:</h3>
+## Como Funciona:
+  Primeiro listo o nome de cada um dos meus repositórios, após isso dentro de um loop do mesmo tamanho da minha lista, junto o nome dos repositórios com a minha URL do github, e por fim crio o QRCode para o meu repositório.
 
-  - Linguagens:
-    - Python
-  
-  - Libs:
-    - qrcode
+## O que aprendi:
+   Aprendi como é simples utilizar a lib qrcode.
+
+## Tecnologias utilizadas:
+
+qrcode | python-decouple | python
+------ | --------------- | ---------
+7.3.1  | 3.7             | 3.10.6
+
+---
+Linkedin: <https://www.linkedin.com/in/samuel-barbosa-dev/> 
+
+E-mail: <samueloficial@protonmail.com>
 
